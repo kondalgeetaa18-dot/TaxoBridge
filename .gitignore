@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Data: never commit raw corpora (licensing). Only manifests/definitions/prior.
+data/raw/
+data/processed/
+*.csv
+*.jsonl
+!data/splits/*.json          # split manifests ARE committed (ids/hashes only)
+!experiments/reference_results/*.json
+!experiments/**/*.json
+
+# Model checkpoints are large; released separately (see docs/RELEASE.md).
+checkpoints/
+*.pt
+*.bin
+*.safetensors
+
+# Logs that are regenerated. Reference/per-table logs under experiments/logs/
+# ARE committed; scratch training logs are not.
+runs/
+wandb/
+*.tmp
+
+# OS
+.DS_Store

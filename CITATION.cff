@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the TaxoBridge manuscript and this repository."
+title: "TaxoBridge: A Primal-Dual Constrained Optimization Framework with Unbalanced Optimal Transport for Efficient Cross-Taxonomy Emotion Detection in Health Text"
+authors:
+  - name: "TaxoBridge authors (anonymized for review)"
+version: 1.0.0
+date-released: 2026-10-25
+license: MIT
+repository-code: "https://github.com/ANON/taxobridge"
+keywords:
+  - cross-taxonomy learning
+  - optimal transport
+  - constrained optimization
+  - emotion detection
+  - mental health
+  - explainable NLP
+preferred-citation:
+  type: article
+  title: "TaxoBridge: A Primal-Dual Constrained Optimization Framework with Unbalanced Optimal Transport for Efficient Cross-Taxonomy Emotion Detection in Health Text"
+  authors:
+    - name: "Anonymous Author(s)"
+  year: 2026
+  notes: "Manuscript submitted for review."

@@ -1,0 +1,19 @@
+# Exact versions used for the reported runs (reference environment, Table VII).
+# Reference hardware: 1x NVIDIA A100 80GB; PyTorch 2.4, CUDA 12.4, HF 4.44.
+# CPU reference timings (Table IX): Intel Xeon @ 2.10 GHz, 2 vCPU,
+#   NumPy 2.5.3 + OpenBLAS, float32.
+#
+# Pin these for bit-closest reproduction. Tier A (numpy/scipy/pyyaml) alone
+# reproduces every computed artifact.
+numpy==2.5.3
+scipy==1.18.1
+pyyaml==6.0.2
+torch==2.4.0
+transformers==4.44.2
+tokenizers==0.19.1
+scikit-learn==1.5.1
+iterative-stratification==0.1.9
+datasets==2.21.0
+pandas==2.2.2
+pytest==8.3.2
+pytest-cov==5.0.0

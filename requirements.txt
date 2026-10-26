@@ -1,0 +1,26 @@
+# TaxoBridge runtime dependencies (loose, for development).
+# For an exact reproduction environment use requirements-lock.txt.
+#
+# Two tiers:
+#   (A) computed artifacts (plans, certificates, suppression, FLOP counts,
+#       threshold sweep) need ONLY numpy + scipy + pyyaml. These run on CPU
+#       in minutes and reproduce Tables IX, X, XVI, XVI-a and Figs 4-7.
+#   (B) training / neural evaluation additionally needs torch + transformers.
+
+# --- Tier A: always required ---
+numpy>=1.24,<3
+scipy>=1.10
+pyyaml>=6.0
+
+# --- Tier B: required only for training and neural evaluation ---
+torch>=2.4,<2.6
+transformers>=4.44,<4.46
+tokenizers>=0.19
+scikit-learn>=1.3           # iterative stratification fallback, metrics
+iterative-stratification>=0.1.7   # multi-label stratified splits (Sechidis et al.)
+datasets>=2.20              # dataset loading helpers
+pandas>=2.0
+
+# --- developer / test ---
+pytest>=7.4
+pytest-cov>=4.1
